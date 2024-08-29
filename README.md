@@ -9,6 +9,10 @@
 
 
 About The Project
+
+
 https://github.com/user-attachments/assets/7148cd5b-5ba3-4c0b-8816-79f13109fd77
+
+
 The app is created with an MVC design pattern, using omdbapi free API.
 
