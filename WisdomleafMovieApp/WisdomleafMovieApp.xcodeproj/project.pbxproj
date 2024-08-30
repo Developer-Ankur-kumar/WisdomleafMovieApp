@@ -14,6 +14,9 @@
 		C13456532C80EDB700E5FA1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C13456522C80EDB700E5FA1B /* Base */; };
 		C134565E2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134565D2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift */; };
 		C1A7621F2C819E81008D8DA4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C1A7621E2C819E81008D8DA4 /* Kingfisher */; };
+		C1A762212C81A27A008D8DA4 /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A762202C81A27A008D8DA4 /* CollectionViewDelegate.swift */; };
+		C1A762232C81A2CC008D8DA4 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A762222C81A2CC008D8DA4 /* MovieDetailsViewController.swift */; };
+		C1A762262C81A305008D8DA4 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = C1A762252C81A305008D8DA4 /* Cosmos */; };
 		C1DE48692C817E50006142A7 /* MovieListApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE48682C817E50006142A7 /* MovieListApiClient.swift */; };
 		C1DE486B2C817E79006142A7 /* MovieDetailsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE486A2C817E79006142A7 /* MovieDetailsApiClient.swift */; };
 		C1DE486E2C817EAA006142A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE486D2C817EAA006142A7 /* NetworkManager.swift */; };
@@ -60,6 +63,8 @@
 		C13456592C80EDB800E5FA1B /* WisdomleafMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomleafMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C134565D2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomleafMovieAppTests.swift; sourceTree = "<group>"; };
 		C13456632C80EDB800E5FA1B /* WisdomleafMovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomleafMovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A762202C81A27A008D8DA4 /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
+		C1A762222C81A2CC008D8DA4 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		C1DE48682C817E50006142A7 /* MovieListApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListApiClient.swift; sourceTree = "<group>"; };
 		C1DE486A2C817E79006142A7 /* MovieDetailsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsApiClient.swift; sourceTree = "<group>"; };
 		C1DE486D2C817EAA006142A7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A762262C81A305008D8DA4 /* Cosmos in Frameworks */,
 				C1A7621F2C819E81008D8DA4 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +232,7 @@
 				C1DE48832C81979B006142A7 /* MovieCollectionViewMethod */,
 				C1DE48822C819797006142A7 /* Controller + Delegate */,
 				C1DE48902C8199BC006142A7 /* MovieListViewController.swift */,
+				C1A762222C81A2CC008D8DA4 /* MovieDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +275,7 @@
 			children = (
 				C1DE48872C8198AA006142A7 /* CollectionViewDataSource.swift */,
 				C1DE488C2C81994A006142A7 /* CollectionViewDelegateFlowLayout.swift */,
+				C1A762202C81A27A008D8DA4 /* CollectionViewDelegate.swift */,
 			);
 			path = MovieCollectionViewMethod;
 			sourceTree = "<group>";
@@ -306,6 +314,7 @@
 			name = WisdomleafMovieApp;
 			packageProductDependencies = (
 				C1A7621E2C819E81008D8DA4 /* Kingfisher */,
+				C1A762252C81A305008D8DA4 /* Cosmos */,
 			);
 			productName = WisdomleafMovieApp;
 			productReference = C13456432C80EDB500E5FA1B /* WisdomleafMovieApp.app */;
@@ -381,6 +390,7 @@
 			mainGroup = C134563A2C80EDB500E5FA1B;
 			packageReferences = (
 				C1A7621D2C819E81008D8DA4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C1A762242C81A305008D8DA4 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = C13456442C80EDB500E5FA1B /* Products */;
 			projectDirPath = "";
@@ -428,9 +438,11 @@
 			files = (
 				C1DE48962C819A96006142A7 /* Extesnion + CornerRadius.swift in Sources */,
 				C13456472C80EDB500E5FA1B /* AppDelegate.swift in Sources */,
+				C1A762232C81A2CC008D8DA4 /* MovieDetailsViewController.swift in Sources */,
 				C1DE48942C819A79006142A7 /* Constant.swift in Sources */,
 				C1DE487E2C819706006142A7 /* MovieListCollectionViewCell.swift in Sources */,
 				C1DE48702C817EBA006142A7 /* APIString.swift in Sources */,
+				C1A762212C81A27A008D8DA4 /* CollectionViewDelegate.swift in Sources */,
 				C1DE48912C8199BC006142A7 /* MovieListViewController.swift in Sources */,
 				C1DE48882C8198AA006142A7 /* CollectionViewDataSource.swift in Sources */,
 				C1DE48862C81984C006142A7 /* SearchBarDelegate.swift in Sources */,
@@ -797,6 +809,14 @@
 				minimumVersion = 7.12.0;
 			};
 		};
+		C1A762242C81A305008D8DA4 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -804,6 +824,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C1A7621D2C819E81008D8DA4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		C1A762252C81A305008D8DA4 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1A762242C81A305008D8DA4 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
