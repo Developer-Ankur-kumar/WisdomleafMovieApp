@@ -18,9 +18,9 @@ The app is created with an MVC design pattern, using omdbapi free API.
 
 While working on this app I've Implement:
 
-Passing data and communication between objects using a Delegation pattern
+Passing data and communication between objects using a Delegation pattern.
 
-Building UI with UIKit approach only
+Building UI with UIKit approach only.
 
-Communication patterns with closures
+Communication patterns with closures.
 
