@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C13456472C80EDB500E5FA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13456462C80EDB500E5FA1B /* AppDelegate.swift */; };
+		C13456492C80EDB500E5FA1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13456482C80EDB500E5FA1B /* SceneDelegate.swift */; };
+		C134564E2C80EDB500E5FA1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C134564D2C80EDB500E5FA1B /* Base */; };
+		C13456502C80EDB700E5FA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C134564F2C80EDB700E5FA1B /* Assets.xcassets */; };
+		C13456532C80EDB700E5FA1B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C13456522C80EDB700E5FA1B /* Base */; };
+		C134565E2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134565D2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift */; };
+		C1DE48692C817E50006142A7 /* MovieListApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE48682C817E50006142A7 /* MovieListApiClient.swift */; };
+		C1DE486B2C817E79006142A7 /* MovieDetailsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE486A2C817E79006142A7 /* MovieDetailsApiClient.swift */; };
+		C1DE486E2C817EAA006142A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE486D2C817EAA006142A7 /* NetworkManager.swift */; };
+		C1DE48702C817EBA006142A7 /* APIString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE486F2C817EBA006142A7 /* APIString.swift */; };
+		C1DE48732C817EF3006142A7 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE48722C817EF3006142A7 /* MovieListModel.swift */; };
+		C1DE48752C817F0E006142A7 /* MovieDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE48742C817F0E006142A7 /* MovieDetailsResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C134565A2C80EDB800E5FA1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C134563B2C80EDB500E5FA1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C13456422C80EDB500E5FA1B;
+			remoteInfo = WisdomleafMovieApp;
+		};
+		C13456642C80EDB800E5FA1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C134563B2C80EDB500E5FA1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C13456422C80EDB500E5FA1B;
+			remoteInfo = WisdomleafMovieApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C13456432C80EDB500E5FA1B /* WisdomleafMovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomleafMovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C13456462C80EDB500E5FA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C13456482C80EDB500E5FA1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C134564D2C80EDB500E5FA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C134564F2C80EDB700E5FA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C13456522C80EDB700E5FA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C13456542C80EDB700E5FA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13456592C80EDB800E5FA1B /* WisdomleafMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomleafMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C134565D2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomleafMovieAppTests.swift; sourceTree = "<group>"; };
+		C13456632C80EDB800E5FA1B /* WisdomleafMovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomleafMovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DE48682C817E50006142A7 /* MovieListApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListApiClient.swift; sourceTree = "<group>"; };
+		C1DE486A2C817E79006142A7 /* MovieDetailsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsApiClient.swift; sourceTree = "<group>"; };
+		C1DE486D2C817EAA006142A7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C1DE486F2C817EBA006142A7 /* APIString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIString.swift; sourceTree = "<group>"; };
+		C1DE48722C817EF3006142A7 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
+		C1DE48742C817F0E006142A7 /* MovieDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C13456402C80EDB500E5FA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13456562C80EDB800E5FA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13456602C80EDB800E5FA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C134563A2C80EDB500E5FA1B = {
+			isa = PBXGroup;
+			children = (
+				C13456452C80EDB500E5FA1B /* WisdomleafMovieApp */,
+				C134565C2C80EDB800E5FA1B /* WisdomleafMovieAppTests */,
+				C13456442C80EDB500E5FA1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C13456442C80EDB500E5FA1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C13456432C80EDB500E5FA1B /* WisdomleafMovieApp.app */,
+				C13456592C80EDB800E5FA1B /* WisdomleafMovieAppTests.xctest */,
+				C13456632C80EDB800E5FA1B /* WisdomleafMovieAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C13456452C80EDB500E5FA1B /* WisdomleafMovieApp */ = {
+			isa = PBXGroup;
+			children = (
+				C13456762C80EE9900E5FA1B /* Application */,
+				C1DE48662C817E12006142A7 /* APIClient */,
+				C1DE486C2C817E8D006142A7 /* Helper */,
+				C1DE48712C817EC8006142A7 /* Model */,
+				C13456772C80F2C700E5FA1B /* Storyborad */,
+				C13456782C80F2D400E5FA1B /* Resource */,
+				C13456542C80EDB700E5FA1B /* Info.plist */,
+			);
+			path = WisdomleafMovieApp;
+			sourceTree = "<group>";
+		};
+		C134565C2C80EDB800E5FA1B /* WisdomleafMovieAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C134565D2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift */,
+			);
+			path = WisdomleafMovieAppTests;
+			sourceTree = "<group>";
+		};
+		C13456762C80EE9900E5FA1B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C13456462C80EDB500E5FA1B /* AppDelegate.swift */,
+				C13456482C80EDB500E5FA1B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C13456772C80F2C700E5FA1B /* Storyborad */ = {
+			isa = PBXGroup;
+			children = (
+				C134564C2C80EDB500E5FA1B /* Main.storyboard */,
+				C13456512C80EDB700E5FA1B /* LaunchScreen.storyboard */,
+			);
+			path = Storyborad;
+			sourceTree = "<group>";
+		};
+		C13456782C80F2D400E5FA1B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C134564F2C80EDB700E5FA1B /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C1DE48662C817E12006142A7 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				C1DE48682C817E50006142A7 /* MovieListApiClient.swift */,
+				C1DE486A2C817E79006142A7 /* MovieDetailsApiClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		C1DE486C2C817E8D006142A7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C1DE486D2C817EAA006142A7 /* NetworkManager.swift */,
+				C1DE486F2C817EBA006142A7 /* APIString.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C1DE48712C817EC8006142A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1DE48722C817EF3006142A7 /* MovieListModel.swift */,
+				C1DE48742C817F0E006142A7 /* MovieDetailsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C13456422C80EDB500E5FA1B /* WisdomleafMovieApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C134566D2C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieApp" */;
+			buildPhases = (
+				C134563F2C80EDB500E5FA1B /* Sources */,
+				C13456402C80EDB500E5FA1B /* Frameworks */,
+				C13456412C80EDB500E5FA1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WisdomleafMovieApp;
+			productName = WisdomleafMovieApp;
+			productReference = C13456432C80EDB500E5FA1B /* WisdomleafMovieApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C13456582C80EDB800E5FA1B /* WisdomleafMovieAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C13456702C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieAppTests" */;
+			buildPhases = (
+				C13456552C80EDB800E5FA1B /* Sources */,
+				C13456562C80EDB800E5FA1B /* Frameworks */,
+				C13456572C80EDB800E5FA1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C134565B2C80EDB800E5FA1B /* PBXTargetDependency */,
+			);
+			name = WisdomleafMovieAppTests;
+			productName = WisdomleafMovieAppTests;
+			productReference = C13456592C80EDB800E5FA1B /* WisdomleafMovieAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C13456622C80EDB800E5FA1B /* WisdomleafMovieAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C13456732C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieAppUITests" */;
+			buildPhases = (
+				C134565F2C80EDB800E5FA1B /* Sources */,
+				C13456602C80EDB800E5FA1B /* Frameworks */,
+				C13456612C80EDB800E5FA1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C13456652C80EDB800E5FA1B /* PBXTargetDependency */,
+			);
+			name = WisdomleafMovieAppUITests;
+			productName = WisdomleafMovieAppUITests;
+			productReference = C13456632C80EDB800E5FA1B /* WisdomleafMovieAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C134563B2C80EDB500E5FA1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C13456422C80EDB500E5FA1B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					C13456582C80EDB800E5FA1B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = C13456422C80EDB500E5FA1B;
+					};
+					C13456622C80EDB800E5FA1B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = C13456422C80EDB500E5FA1B;
+					};
+				};
+			};
+			buildConfigurationList = C134563E2C80EDB500E5FA1B /* Build configuration list for PBXProject "WisdomleafMovieApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C134563A2C80EDB500E5FA1B;
+			productRefGroup = C13456442C80EDB500E5FA1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C13456422C80EDB500E5FA1B /* WisdomleafMovieApp */,
+				C13456582C80EDB800E5FA1B /* WisdomleafMovieAppTests */,
+				C13456622C80EDB800E5FA1B /* WisdomleafMovieAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C13456412C80EDB500E5FA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13456502C80EDB700E5FA1B /* Assets.xcassets in Resources */,
+				C13456532C80EDB700E5FA1B /* Base in Resources */,
+				C134564E2C80EDB500E5FA1B /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13456572C80EDB800E5FA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13456612C80EDB800E5FA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C134563F2C80EDB500E5FA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13456472C80EDB500E5FA1B /* AppDelegate.swift in Sources */,
+				C1DE48702C817EBA006142A7 /* APIString.swift in Sources */,
+				C1DE48752C817F0E006142A7 /* MovieDetailsResponse.swift in Sources */,
+				C1DE486B2C817E79006142A7 /* MovieDetailsApiClient.swift in Sources */,
+				C1DE486E2C817EAA006142A7 /* NetworkManager.swift in Sources */,
+				C1DE48732C817EF3006142A7 /* MovieListModel.swift in Sources */,
+				C13456492C80EDB500E5FA1B /* SceneDelegate.swift in Sources */,
+				C1DE48692C817E50006142A7 /* MovieListApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13456552C80EDB800E5FA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C134565E2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C134565F2C80EDB800E5FA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C134565B2C80EDB800E5FA1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C13456422C80EDB500E5FA1B /* WisdomleafMovieApp */;
+			targetProxy = C134565A2C80EDB800E5FA1B /* PBXContainerItemProxy */;
+		};
+		C13456652C80EDB800E5FA1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C13456422C80EDB500E5FA1B /* WisdomleafMovieApp */;
+			targetProxy = C13456642C80EDB800E5FA1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C134564C2C80EDB500E5FA1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C134564D2C80EDB500E5FA1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C13456512C80EDB700E5FA1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C13456522C80EDB700E5FA1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C134566B2C80EDB800E5FA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C134566C2C80EDB800E5FA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C134566E2C80EDB800E5FA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6N8FUF3XH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WisdomleafMovieApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C134566F2C80EDB800E5FA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6N8FUF3XH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WisdomleafMovieApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C13456712C80EDB800E5FA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6N8FUF3XH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisdomleafMovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WisdomleafMovieApp";
+			};
+			name = Debug;
+		};
+		C13456722C80EDB800E5FA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6N8FUF3XH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WisdomleafMovieApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WisdomleafMovieApp";
+			};
+			name = Release;
+		};
+		C13456742C80EDB800E5FA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6N8FUF3XH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WisdomleafMovieApp;
+			};
+			name = Debug;
+		};
+		C13456752C80EDB800E5FA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6N8FUF3XH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WisdomleafMovieApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C134563E2C80EDB500E5FA1B /* Build configuration list for PBXProject "WisdomleafMovieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C134566B2C80EDB800E5FA1B /* Debug */,
+				C134566C2C80EDB800E5FA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C134566D2C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C134566E2C80EDB800E5FA1B /* Debug */,
+				C134566F2C80EDB800E5FA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C13456702C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C13456712C80EDB800E5FA1B /* Debug */,
+				C13456722C80EDB800E5FA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C13456732C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C13456742C80EDB800E5FA1B /* Debug */,
+				C13456752C80EDB800E5FA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C134563B2C80EDB500E5FA1B /* Project object */;
+}
