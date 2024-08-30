@@ -17,6 +17,8 @@
 		C1A762212C81A27A008D8DA4 /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A762202C81A27A008D8DA4 /* CollectionViewDelegate.swift */; };
 		C1A762232C81A2CC008D8DA4 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A762222C81A2CC008D8DA4 /* MovieDetailsViewController.swift */; };
 		C1A762262C81A305008D8DA4 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = C1A762252C81A305008D8DA4 /* Cosmos */; };
+		C1A762282C81AE43008D8DA4 /* DataStorageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A762272C81AE43008D8DA4 /* DataStorageManagerTests.swift */; };
+		C1A7622A2C81AE78008D8DA4 /* MovieListApiClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A762292C81AE78008D8DA4 /* MovieListApiClientTests.swift */; };
 		C1DE48692C817E50006142A7 /* MovieListApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE48682C817E50006142A7 /* MovieListApiClient.swift */; };
 		C1DE486B2C817E79006142A7 /* MovieDetailsApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE486A2C817E79006142A7 /* MovieDetailsApiClient.swift */; };
 		C1DE486E2C817EAA006142A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE486D2C817EAA006142A7 /* NetworkManager.swift */; };
@@ -43,13 +45,6 @@
 			remoteGlobalIDString = C13456422C80EDB500E5FA1B;
 			remoteInfo = WisdomleafMovieApp;
 		};
-		C13456642C80EDB800E5FA1B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C134563B2C80EDB500E5FA1B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C13456422C80EDB500E5FA1B;
-			remoteInfo = WisdomleafMovieApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -62,9 +57,10 @@
 		C13456542C80EDB700E5FA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C13456592C80EDB800E5FA1B /* WisdomleafMovieAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomleafMovieAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C134565D2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomleafMovieAppTests.swift; sourceTree = "<group>"; };
-		C13456632C80EDB800E5FA1B /* WisdomleafMovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomleafMovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A762202C81A27A008D8DA4 /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
 		C1A762222C81A2CC008D8DA4 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		C1A762272C81AE43008D8DA4 /* DataStorageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageManagerTests.swift; sourceTree = "<group>"; };
+		C1A762292C81AE78008D8DA4 /* MovieListApiClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListApiClientTests.swift; sourceTree = "<group>"; };
 		C1DE48682C817E50006142A7 /* MovieListApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListApiClient.swift; sourceTree = "<group>"; };
 		C1DE486A2C817E79006142A7 /* MovieDetailsApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsApiClient.swift; sourceTree = "<group>"; };
 		C1DE486D2C817EAA006142A7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -100,13 +96,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C13456602C80EDB800E5FA1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,7 +113,6 @@
 			children = (
 				C13456432C80EDB500E5FA1B /* WisdomleafMovieApp.app */,
 				C13456592C80EDB800E5FA1B /* WisdomleafMovieAppTests.xctest */,
-				C13456632C80EDB800E5FA1B /* WisdomleafMovieAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				C134565D2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift */,
+				C1A762272C81AE43008D8DA4 /* DataStorageManagerTests.swift */,
+				C1A762292C81AE78008D8DA4 /* MovieListApiClientTests.swift */,
 			);
 			path = WisdomleafMovieAppTests;
 			sourceTree = "<group>";
@@ -338,24 +328,6 @@
 			productReference = C13456592C80EDB800E5FA1B /* WisdomleafMovieAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C13456622C80EDB800E5FA1B /* WisdomleafMovieAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C13456732C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieAppUITests" */;
-			buildPhases = (
-				C134565F2C80EDB800E5FA1B /* Sources */,
-				C13456602C80EDB800E5FA1B /* Frameworks */,
-				C13456612C80EDB800E5FA1B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C13456652C80EDB800E5FA1B /* PBXTargetDependency */,
-			);
-			name = WisdomleafMovieAppUITests;
-			productName = WisdomleafMovieAppUITests;
-			productReference = C13456632C80EDB800E5FA1B /* WisdomleafMovieAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -370,10 +342,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					C13456582C80EDB800E5FA1B = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = C13456422C80EDB500E5FA1B;
-					};
-					C13456622C80EDB800E5FA1B = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = C13456422C80EDB500E5FA1B;
 					};
@@ -398,7 +366,6 @@
 			targets = (
 				C13456422C80EDB500E5FA1B /* WisdomleafMovieApp */,
 				C13456582C80EDB800E5FA1B /* WisdomleafMovieAppTests */,
-				C13456622C80EDB800E5FA1B /* WisdomleafMovieAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -416,13 +383,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C13456572C80EDB800E5FA1B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C13456612C80EDB800E5FA1B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,13 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C134565E2C80EDB800E5FA1B /* WisdomleafMovieAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C134565F2C80EDB800E5FA1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C1A762282C81AE43008D8DA4 /* DataStorageManagerTests.swift in Sources */,
+				C1A7622A2C81AE78008D8DA4 /* MovieListApiClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,11 +435,6 @@
 			isa = PBXTargetDependency;
 			target = C13456422C80EDB500E5FA1B /* WisdomleafMovieApp */;
 			targetProxy = C134565A2C80EDB800E5FA1B /* PBXContainerItemProxy */;
-		};
-		C13456652C80EDB800E5FA1B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C13456422C80EDB500E5FA1B /* WisdomleafMovieApp */;
-			targetProxy = C13456642C80EDB800E5FA1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -723,42 +673,6 @@
 			};
 			name = Release;
 		};
-		C13456742C80EDB800E5FA1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6N8FUF3XH4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WisdomleafMovieApp;
-			};
-			name = Debug;
-		};
-		C13456752C80EDB800E5FA1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6N8FUF3XH4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoreData.WisdomleafMovieAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WisdomleafMovieApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -785,15 +699,6 @@
 			buildConfigurations = (
 				C13456712C80EDB800E5FA1B /* Debug */,
 				C13456722C80EDB800E5FA1B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C13456732C80EDB800E5FA1B /* Build configuration list for PBXNativeTarget "WisdomleafMovieAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C13456742C80EDB800E5FA1B /* Debug */,
-				C13456752C80EDB800E5FA1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
